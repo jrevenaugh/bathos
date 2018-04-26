@@ -10,6 +10,8 @@ Using ETOPO bathymetry (reformatted), perform basic topography analyses, includi
 In addition, the site selection page uses leaflet and includes earthquake epicenters, NUVEL 1
 plate boundaries and Smithsonian Institution Global Volcano Program holocene-active volcanoes.
 
+Contact me for additional information or for access to pre-processed ETOPO files.
+
 Developed and works with:
 R 3.4.3
 shiny 1.0.5
