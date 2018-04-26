@@ -1,0 +1,7 @@
+etopo5 <- readRDS("~/R-Studio/Projects/Globes/ETOPO/etopo5_RDS")
+etopo5 %<>% arrange( lon, lat )
+lons <- unlist( distinct( etopo5, lon ), use.names = FALSE )
+lats <- unlist( distinct( etopo5, lat ), use.names = FALSE )
+elev <- matrix( etopo5$elev, nrow = length(lons), byrow = TRUE )
+elev_obj <- list(x = lons, y = lats, z = elev)
+rm(elev, lons, lats, etopo5)
