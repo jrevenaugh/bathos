@@ -72,6 +72,6 @@ ui <- navbarPage("Bathos V1.0",
                           "Earth Sciences", br(),
                           "Minneapolis, MN 55455 USA", br(),
                           a("justinr@umn.edu", href="mailto:justinr@umn.edu"), br(),
-                          a("See the code", href="https://github.com/jrevenaugh/Bathos"), br()
+                          a("See the code", href="https://github.com/jrevenaugh/bathos"), br()
                  )
 )
