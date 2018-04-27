@@ -29,5 +29,5 @@ M <- cbind(rep(2810, 4320), M)
 
 etopo5_obj <- list(x = lon, y = lat, z = M)
 
-etopoOut <- "ETOPO5_1.RDS"       # Output path
+etopoOut <- "ETOPO5.RDS"       # Output path
 saveRDS(object = etopo5_obj, file = etopoOut )
