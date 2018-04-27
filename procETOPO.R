@@ -16,13 +16,16 @@ m <- readBin(etopoIn,
 M <- matrix(m, nrow = 4320, byrow = FALSE)
 M <- rbind(M[2161:4320,], M[1:2160,])
 
+# Reverse order of columns (-90 to 90 lat)
+M <- M[,2160:1]
+
 # Create lon, lat sequences
 lon <- seq(-180 + 1 / 12, by = 1 / 12, length.out = 4320)
-lat <- seq(90, -90, -1 / 12)
+lat <- seq(-90, 90, 1 / 12)
 
 # Downloaded data skips the south pole (elevation 2810 m), so let's add it
 # (lat sequence already includes it).
-M <- cbind( M, rep( 2810, 4320))
+M <- cbind(rep(2810, 4320), M)
 
 etopo5_obj <- list(x = lon, y = lat, z = M)
 
