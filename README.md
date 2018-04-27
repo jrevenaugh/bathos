@@ -11,6 +11,9 @@ In addition, the site selection page uses leaflet and includes earthquake epicen
 plate boundaries and Smithsonian Institution Global Volcano Program holocene-active volcanoes.
 
 Contact me for additional information or for access to pre-processed ETOPO files.
+procETOPO.R converts web-available ETOPO5.DAT file to proper format.  I prefer to use
+a thinned version of the ETOPO1 DEM instead.  See procETOPO.R for processed topography
+format expected by bathos.
 
 Developed and works with:
 
