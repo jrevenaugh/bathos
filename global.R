@@ -14,7 +14,7 @@ limit_pac <- data.frame( Latitude = c(-90, 90, -90, 90),
 # Prepare earthquake data frame
 eqcat <- readRDS(file = "~/R-Studio/Projects/Shiny/Bathos/eqcat.RDS")
 eqcat %<>% dplyr::filter(Magnitude >= 6) %>%
-  select(DateTime, Magnitude, Depth, Latitude, Longitude)
+           dplyr::select(DateTime, Magnitude, Depth, Latitude, Longitude)
 
 # Set up depth-dependent colors
 nColors <- 3
