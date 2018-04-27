@@ -13,11 +13,19 @@ plate boundaries and Smithsonian Institution Global Volcano Program holocene-act
 Contact me for additional information or for access to pre-processed ETOPO files.
 
 Developed and works with:
+
 R 3.4.3
+
 shiny 1.0.5
+
 shinythemes 1.1.1
+
 leaflet 2.0.0
+
 leaflet.extras 1.0.0
+
 plotly 4.7.1
+
 tidyverse 1.2.1
+
 magrittr 1.5
